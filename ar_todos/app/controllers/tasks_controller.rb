@@ -39,7 +39,7 @@ class TaskController
     Task.where("list_id = ?",list).delete(task_id)
   end
 
-  def complete_task(list, id)
+  def complete_task!(list, id)
     task_id = convert_task_id(list, id)
     task_array = Task.where("list_id == ? and id == ?", list,task_id)
     p task_array[0]
