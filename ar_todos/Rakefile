@@ -1,6 +1,5 @@
 require 'rake'
 require 'rspec/core/rake_task'
-require_relative 'db/config'
 
 require_relative 'config/application'
 
@@ -21,6 +20,7 @@ task "db:reset" do
   rm_f DB_PATH
   touch DB_PATH
   system "rake db:migrate"
+  system "rake db:seed"
 end
 
 desc "migrate the database (options: VERSION=x, VERBOSE=false, SCOPE=blog)."

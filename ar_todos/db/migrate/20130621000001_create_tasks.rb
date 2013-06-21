@@ -5,6 +5,7 @@ class CreateTasks < ActiveRecord::Migration
     create_table :tasks do |task|
       task.string :description
       task.integer  :completed
+      task.integer :list_id
       task.timestamps # Check this later
     end
   end
