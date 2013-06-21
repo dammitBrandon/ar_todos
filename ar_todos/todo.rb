@@ -8,9 +8,11 @@ puts "You said #{input}"
 
 my_task_controller = TaskController.new
 # my_task_controller.add_task("Make a new Meeting", "1")
-my_task_controller.list_tasks("2")
-my_task_controller.delete_task("2","3")
-my_task_controller.list_tasks("2")
+my_task_controller.list_tasks("3")
+# my_task_controller.delete_task("3","3")
+# my_task_controller.complete_task("3","3")
+
+# my_task_controller.list_tasks("3")
 
 # my_task_controller.list_tasks("1")
 
