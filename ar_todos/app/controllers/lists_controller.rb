@@ -1,3 +1,5 @@
+class ListController
+
 def list_lists
   List.all.each { |list| p "#{list.id}, #{list.name}" }
 end
@@ -8,4 +10,6 @@ end
 
 def delete_list(id)
   List.delete(id.to_i)
+end
+
 end

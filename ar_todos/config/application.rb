@@ -5,6 +5,7 @@ require 'logger'
 require 'faker'
 require_relative '../app/controllers/lists_controller'
 require_relative '../app/controllers/tasks_controller'
+require_relative '../app/view/display'
 
 APP_ROOT = Pathname.new(File.expand_path(File.join(File.dirname(__FILE__), '..')))
 
