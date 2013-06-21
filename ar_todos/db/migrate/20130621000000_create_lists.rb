@@ -1,4 +1,4 @@
-require_relative '../config'
+require_relative '../../config/application'
 
 class CreateLists < ActiveRecord::Migration
   def change
